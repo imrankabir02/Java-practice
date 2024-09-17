@@ -1,30 +1,63 @@
 # Java Installation Guide
 
-### Prerequisites
-Before running this project, ensure that Java is installed on your system. Follow the instructions below for your respective operating system.
-
----
+This guide will help you install Java on your system, which is necessary to run Java applications.
 
 ## Windows
 
-### Step 1: Download Java JDK
-1. Go to the official Oracle JDK download page:  
-   [https://www.oracle.com/java/technologies/javase-downloads.html](https://www.oracle.com/java/technologies/javase-downloads.html)
-2. Download the **Java SE Development Kit** (JDK) for Windows.
+1. **Download the JDK:**
+   - Visit the [Oracle JDK download page](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html)
+   - Accept the license agreement
+   - Download the Windows x64 Installer
 
-### Step 2: Install Java
-1. Run the downloaded `.exe` file.
-2. Follow the on-screen instructions to complete the installation.
+2. **Install the JDK:**
+   - Run the downloaded installer
+   - Follow the installation wizard, using the default settings
 
-### Step 3: Set up Java Environment Variables
-1. Open **Start** and search for `Environment Variables`.
-2. Click on **Edit the system environment variables**.
-3. Under the **System Properties** window, click on **Environment Variables**.
-4. Under **System Variables**, find the `Path` variable and click **Edit**.
-5. Click **New** and add the path to your Java `bin` directory (e.g., `C:\Program Files\Java\jdk-17\bin`).
-6. Click **OK** to save the changes.
+3. **Set up Environment Variables:**
+   - Right-click on 'This PC' or 'My Computer' and select 'Properties'
+   - Click on 'Advanced system settings'
+   - Click on 'Environment Variables'
+   - Under 'System variables', find and select 'Path', then click 'Edit'
+   - Click 'New' and add the path to the JDK's bin folder (e.g., C:\Program Files\Java\jdk-11.x.x\bin)
+   - Click 'OK' to close all windows
 
-### Step 4: Verify the Installation
-1. Open **Command Prompt** and type the following command:
-   ```bash
-   java -version
+4. **Verify Installation:**
+   - Open Command Prompt
+   - Type `java -version` and press Enter
+   - If Java is installed correctly, you should see version information
+
+## macOS
+
+1. **Download the JDK:**
+   - Visit the [Oracle JDK download page](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html)
+   - Accept the license agreement
+   - Download the macOS Installer
+
+2. **Install the JDK:**
+   - Open the downloaded .dmg file
+   - Double-click on the package icon to start the installation
+   - Follow the installation wizard, using the default settings
+
+3. **Verify Installation:**
+   - Open Terminal
+   - Type `java -version` and press Enter
+   - If Java is installed correctly, you should see version information
+
+## Linux (Ubuntu/Debian)
+
+1. **Update package index:**
+
+2. **Install OpenJDK:**
+
+3. **Verify Installation:**
+- Open Terminal
+- Type `java -version` and press Enter
+- If Java is installed correctly, you should see version information
+
+## Troubleshooting
+
+If you encounter any issues:
+- Make sure you've completed all steps for your operating system
+- Check that the environment variables are set correctly (Windows)
+- Try restarting your computer after installation
+- If problems persist, consult the official [Java documentation](https://docs.oracle.com/en/java/)
