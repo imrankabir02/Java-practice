@@ -46,8 +46,12 @@ This guide will help you install Java on your system, which is necessary to run 
 ## Linux (Ubuntu/Debian)
 
 1. **Update package index:**
+```bash
+sudo apt update
 
 2. **Install OpenJDK:**
+```bash
+sudo apt install default-jdk
 
 3. **Verify Installation:**
 - Open Terminal
