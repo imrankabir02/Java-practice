@@ -23,6 +23,6 @@ public class FirstAndLast {
 
     public static void main(String[] args) {
         String str = "ajfkdshqjghsdajkjajkfg";
-        findOccurance(str, 0, 'q');
+        findOccurance(str, 0, 'a');
     }
 }
