@@ -1,22 +1,19 @@
 package Problems;
 
 public class Palindrome {
-    public String isPalindrome(String s) {
-        if(s.equals(new StringBuilder(s).reverse().toString())){
-            return s;
+    public static boolean isPalindrome(String s) {
+        int left = 0, right = s.length() - 1;
+        while(left <= right) {
+            if(s.charAt(left) != s.charAt(right)) {
+                return false;
+            } else {
+                left++;
+                right--;
+            }
         }
-
-        String left = isPalindrome(s.substring(1));
-        String right = isPalindrome(s.substring(s.length() - 1));
-
-        if(left.length() > right.length()) {
-            return left;
-        } else {
-            return right;
-        }
-
+        return true;
     }
     public static void main(String[] args) {
-        System.err.println(isPalindrome("123212"));
+        System.out.println(isPalindrome("abcba"));
     }
 }
