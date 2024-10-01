@@ -1,11 +1,17 @@
-package Recursion;
+package Problems;
+
+import java.util.*;
 
 public class SubString {
     public static void subSequence(String str, int idx, String newString, HashSet<String> set) {
         if(idx == str.length()) {
-            if(set)
-            System.out.println(newString);
-            return;
+            if(set.contains(newString)){
+                return;
+            } else {
+                System.out.println(newString);
+                set.add(newString);
+                return;
+            }
         }
 
         char currChar = str.charAt(idx);
@@ -15,7 +21,7 @@ public class SubString {
     }
 
     public static void main(String[] args) {
-        String str = "aaa";
+        String str = "abac";
         HashSet<String> set = new HashSet<>();
 
         subSequence(str, 0, "", set);
